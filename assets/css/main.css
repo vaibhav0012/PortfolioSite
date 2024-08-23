@@ -504,7 +504,7 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0;
+  padding: 40px 0px 10px 0px;
   overflow: clip;
 }
 
@@ -512,7 +512,7 @@ section,
 # Global Section Titles
 --------------------------------------------------------------*/
 .section-title {
-  padding-bottom: 60px;
+  padding-bottom: 20px;
   position: relative;
 }
 
@@ -522,6 +522,7 @@ section,
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
+  color: #040b14;
 }
 
 .section-title h2:after {
@@ -621,6 +622,11 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+#about {
+  margin-bottom: 0px; /* Reduce this value if it's too large */
+}
+
+
 .about .content h2 {
   font-weight: 700;
   font-size: 24px;
@@ -632,7 +638,7 @@ section,
 }
 
 .about .content ul li {
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
   display: flex;
   align-items: center;
 }
@@ -1055,103 +1061,33 @@ section,
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
-.contact .info-wrap {
-  background-color: var(--surface-color);
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  padding: 30px;
+.contact {
+  background-color: #f4f4f4; /* Light gray background */
+  padding: 40px 0;
+  text-align: center; /* Ensures that the icons stay centered */
 }
 
-@media (max-width: 575px) {
-  .contact .info-wrap {
-    padding: 20px;
-  }
+.section-title {
+  text-align: left; /* Aligns the section title text to the left */
+  margin-bottom: 20px; /* Space below the title */
 }
 
-.contact .info-item {
-  margin-bottom: 40px;
+.social-icon {
+  font-size: 24px; /* Size of the icons */
+  margin: 10px; /* Spacing between icons */
+  color: #333; /* Dark gray color for icons */
+  transition: color 0.3s; /* Smooth transition for hover effect */
 }
 
-.contact .info-item i {
-  font-size: 20px;
-  color: var(--accent-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 92%);
-  width: 44px;
-  height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out;
-  margin-right: 15px;
+.social-icon:hover {
+  color: #149ddd; /* Light blue color on hover */
+  text-decoration: none; /* Removes underline from icons on hover */
 }
 
-.contact .info-item h3 {
-  padding: 0;
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 5px;
+.contact .section-title p {
+  text-align: center; /* Centers the paragraph text within the contact section */
 }
 
-.contact .info-item p {
-  padding: 0;
-  margin-bottom: 0;
-  font-size: 14px;
-}
-
-.contact .info-item:hover i {
-  background: var(--accent-color);
-  color: var(--contrast-color);
-}
-
-.contact .php-email-form {
-  background-color: var(--surface-color);
-  height: 100%;
-  padding: 30px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 575px) {
-  .contact .php-email-form {
-    padding: 20px;
-  }
-}
-
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email],
-.contact .php-email-form textarea {
-  font-size: 14px;
-  padding: 10px 15px;
-  box-shadow: none;
-  border-radius: 0;
-  color: var(--default-color);
-  background-color: var(--surface-color);
-  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
-}
-
-.contact .php-email-form input[type=text]:focus,
-.contact .php-email-form input[type=email]:focus,
-.contact .php-email-form textarea:focus {
-  border-color: var(--accent-color);
-}
-
-.contact .php-email-form input[type=text]::placeholder,
-.contact .php-email-form input[type=email]::placeholder,
-.contact .php-email-form textarea::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
-}
-
-.contact .php-email-form button[type=submit] {
-  color: var(--contrast-color);
-  background: var(--accent-color);
-  border: 0;
-  padding: 10px 30px;
-  transition: 0.4s;
-  border-radius: 50px;
-}
-
-.contact .php-email-form button[type=submit]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 25%);
-}
 
 /*--------------------------------------------------------------
 # Portfolio Details Section
@@ -1215,69 +1151,10 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Service Details Section
+# Tech Stack Section
 --------------------------------------------------------------*/
-.service-details .services-list {
-  padding: 10px 30px;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-  margin-bottom: 20px;
-}
 
-.service-details .services-list a {
-  display: block;
-  line-height: 1;
-  padding: 8px 0 8px 15px;
-  border-left: 3px solid color-mix(in srgb, var(--default-color), transparent 70%);
-  margin: 20px 0;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-  transition: 0.3s;
-}
 
-.service-details .services-list a.active {
-  color: var(--heading-color);
-  font-weight: 700;
-  border-color: var(--accent-color);
-}
-
-.service-details .services-list a:hover {
-  border-color: var(--accent-color);
-}
-
-.service-details .services-img {
-  margin-bottom: 20px;
-}
-
-.service-details h3 {
-  font-size: 26px;
-  font-weight: 700;
-}
-
-.service-details h4 {
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.service-details p {
-  font-size: 15px;
-}
-
-.service-details ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.service-details ul li {
-  padding: 5px 0;
-  display: flex;
-  align-items: center;
-}
-
-.service-details ul i {
-  font-size: 20px;
-  margin-right: 8px;
-  color: var(--accent-color);
-}
 
 /*--------------------------------------------------------------
 # Starter Section Section
@@ -1286,3 +1163,50 @@ section,
   /* Add your styles here */
 }
 
+.education-container {
+  background-color: #f9f9f9; /* Extra light gray background */
+  padding: 20px; /* Padding inside the container */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+.education-detail {
+  text-align: center; /* Center content */
+  padding: 15px; /* Padding for each education detail for spacing */
+}
+
+.education-detail img {
+  max-width: 70%; /* Reducing the size of the images */
+  height: auto;
+  margin-bottom: 10px; /* Space below the image */
+}
+
+h3 {
+  margin: 5px 0; /* Reducing the margin around headings for compact look */
+  font-size: 18px; /* Adjust font size if necessary */
+}
+
+.education-detail p {
+  font-size: 14px; /* Smaller paragraph text */
+}
+
+/* Assuming you have specific IDs or classes for your sections */
+#about {
+  /*background-color: #E6F4F1; /* Example light blue color, replace with your exact color */
+  color: #333; /* Adjust text color as needed */
+  padding: 40px 20px; /* Example padding, adjust as necessary */
+}
+
+/* You can generalize to other sections if they have a common class or adjust for specific IDs */
+.section {
+  padding: 40px 20px; /* Consistent padding for all sections */
+}
+
+/* Alternate colors for other sections, if they follow a pattern you can use nth-child */
+.section:nth-child(even) {
+  background-color: #fff; /* White for even sections */
+}
+
+.section:nth-child(odd) {
+  background-color: #E6F4F1; /* Light blue for odd sections */
+}

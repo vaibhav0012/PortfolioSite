@@ -9,26 +9,7 @@
 (function() {
   "use strict";
   
-  document.addEventListener('DOMContentLoaded', function() {
-    var calendarEl = document.getElementById('calendar');
-    if (calendarEl) { // Checks if the calendar element exists in the DOM
-      var calendar = new FullCalendar.Calendar(calendarEl, {
-        plugins: ['dayGrid'],
-        events: [
-          // Your event data here
-        ]
-      });
-
-      calendar.render();
-    }
-
-    var openCalendarButton = document.getElementById('open-calendar');
-    if (openCalendarButton) {
-      openCalendarButton.addEventListener('click', function() {
-        $('#calendarModal').modal('show'); // Assuming Bootstrap modal
-      });
-    }
-  });
+  
   /**
    * Header toggle
    */
@@ -247,3 +228,29 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+/**
+ * Initialize the Tech Stack Carousel
+ */
+function initTechStackCarousel() {
+  const techStackCarouselElement = document.querySelector('#techStackCarousel');
+  if (techStackCarouselElement) {
+      new bootstrap.Carousel(techStackCarouselElement, {
+          interval: 3000, // Carousel changes every 3 seconds
+          wrap: true, // Allows the carousel to loop back to the beginning
+          touch: true // Enables touch gestures
+      });
+  }
+}
+
+// Call the initialization function when the document loads
+document.addEventListener('DOMContentLoaded', function () {
+  var techStackCarouselElement = document.querySelector('#techStackCarousel');
+  if (techStackCarouselElement) {
+      new bootstrap.Carousel(techStackCarouselElement, {
+          //interval: 3000,
+          wrap: true
+      });
+  }
+});
+
