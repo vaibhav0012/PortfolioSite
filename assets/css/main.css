@@ -1062,30 +1062,30 @@ section,
 # Contact Section
 --------------------------------------------------------------*/
 .contact {
-  background-color: #f4f4f4; /* Light gray background */
+  background-color: #f4f4f4; 
   padding: 40px 0;
-  text-align: center; /* Ensures that the icons stay centered */
+  text-align: center; 
 }
 
 .section-title {
-  text-align: left; /* Aligns the section title text to the left */
-  margin-bottom: 20px; /* Space below the title */
+  text-align: left; 
+  margin-bottom: 20px; 
 }
 
 .social-icon {
-  font-size: 24px; /* Size of the icons */
-  margin: 10px; /* Spacing between icons */
-  color: #333; /* Dark gray color for icons */
-  transition: color 0.3s; /* Smooth transition for hover effect */
+  font-size: 24px; 
+  margin: 10px; 
+  color: #333; 
+  transition: color 0.3s; 
 }
 
 .social-icon:hover {
-  color: #149ddd; /* Light blue color on hover */
-  text-decoration: none; /* Removes underline from icons on hover */
+  color: #149ddd; 
+  text-decoration: none; 
 }
 
 .contact .section-title p {
-  text-align: center; /* Centers the paragraph text within the contact section */
+  text-align: center; 
 }
 
 
@@ -1164,49 +1164,46 @@ section,
 }
 
 .education-container {
-  background-color: #f9f9f9; /* Extra light gray background */
-  padding: 20px; /* Padding inside the container */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  background-color: #f9f9f9; 
+  padding: 20px; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
 }
 
 .education-detail {
-  text-align: center; /* Center content */
-  padding: 15px; /* Padding for each education detail for spacing */
+  text-align: center; 
+  padding: 15px; 
 }
 
 .education-detail img {
-  max-width: 70%; /* Reducing the size of the images */
+  max-width: 70%; 
   height: auto;
-  margin-bottom: 10px; /* Space below the image */
+  margin-bottom: 10px; 
 }
 
 h3 {
-  margin: 5px 0; /* Reducing the margin around headings for compact look */
-  font-size: 18px; /* Adjust font size if necessary */
+  margin: 5px 0; 
+  font-size: 18px; 
 }
 
 .education-detail p {
-  font-size: 14px; /* Smaller paragraph text */
+  font-size: 14px; 
 }
 
-/* Assuming you have specific IDs or classes for your sections */
+
 #about {
-  /*background-color: #E6F4F1; /* Example light blue color, replace with your exact color */
-  color: #333; /* Adjust text color as needed */
-  padding: 40px 20px; /* Example padding, adjust as necessary */
+  color: #333; 
+  padding: 40px 20px; 
 }
 
-/* You can generalize to other sections if they have a common class or adjust for specific IDs */
 .section {
-  padding: 40px 20px; /* Consistent padding for all sections */
+  padding: 40px 20px; 
 }
 
-/* Alternate colors for other sections, if they follow a pattern you can use nth-child */
 .section:nth-child(even) {
-  background-color: #fff; /* White for even sections */
+  background-color: #fff; 
 }
 
 .section:nth-child(odd) {
-  background-color: #E6F4F1; /* Light blue for odd sections */
+  background-color: #E6F4F1; 
 }
