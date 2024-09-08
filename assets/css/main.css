@@ -1322,5 +1322,6 @@ h3 {
   font-size: 16px; /* Adjust font size as needed */
   color: #fff; /* This is typically adjusted based on your theme */
   margin-top: 4px; /* Small gap between the name and location */
+  margin-bottom: 1px;
 }
 
